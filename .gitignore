@@ -1,0 +1,95 @@
+# ── Secrets & credentials ──
+# NEVER commit these — they contain your Deriv API token
+gold_config_real.json
+gold_config_demo.json
+*config*.json
+*.token
+.env
+.env.*
+
+# ── TimesFM model weights / caches (large, auto-downloaded) ──
+timesfm-3.0.0/
+*.ckpt
+*.safetensors
+*.h5
+*.pb
+.cache/
+checkpoints/
+huggingface_cache/
+
+# ── Backtest / trade outputs ──
+*.csv
+backtest_results/
+trades_*.json
+equity_curve*.png
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Testing / coverage ──
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# ── Type checkers / linters ──
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.pytype/
+
+# ── Packaging (PyInstaller, if you ever freeze the GUI) ──
+*.manifest
+*.spec
+build/
+installer/
+
+# ── Logs ──
+*.log
+logs/
+
+# ── IDE / OS ──
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
